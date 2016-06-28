@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>			
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" media="screen" href= "http://docker-dev.dd-han.tw/static/semantic-ui/semantic.min.css">
+	<title>專題</title>
+	<script src="http://docker-dev.dd-han.tw/static/jquery-2.2.2.min.js"></script>
+	<script src="http://docker-dev.dd-han.tw/static/semantic-ui/semantic.min.js"></script>
+</head>
+<body>
+	<div class="ui container" style="padding:20px;">
+	<table class="ui celled definition table">
+		<thead>
+			<tr>
+			<th></th>
+			<th>傳統架構</th>
+			<th>雲分散架構</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan='3' class="center aligned">協定/運算比較</td>
+			</tr>
+			<tr>
+				<td>音訊傳輸協定</td>
+				<td>無需音訊傳出採用傳統客戶端辨識</td>
+				<td>採用WebRTC & RTSP 即時串流</td>
+			</tr>
+			<tr>
+				<td>辨識資料協定</td>
+				<td>寫死在 Client 端，且多數無開放更新協定</td>
+				<td>採用伺服器辨識，資料以 Web-Socket 進行傳輸</td>
+			</tr>
+			<tr>
+				<td>辨識單元</td>
+				<td>需基於嵌入裝置例如 Arduino 等</td>
+				<td>可為任何裝置/電腦/穿戴式</td>
+			</tr>
+			<tr>
+				<td>運算單元</td>
+				<td>由Client進行即時運算辨識且非同步</td>
+				<td>由Cloud Server 針對 WebRTC 所夾帶的串流訊息即時辨識</td>
+			</tr>
+			<tr>
+				<td colspan='3' class="center aligned">優劣分析</td>
+			</tr>
+			<tr>
+				<td>擴充性</td>
+				<td class="negative">劣,需受廠商限制綁定特殊裝置</td>
+				<td class="Positive">好,採用通用的裝置以及基於Python的可程式化編程</td>
+			</tr>
+			<tr>
+				<td>開發難度</td>
+				<td class="negative">劣,需受限於特定的裝置(Arduino/或者封閉的晶片)</td>
+				<td class="Positive">好,可基於任何裝置以通用的 WebRTC 協定以及 Python 串 Hadoop 進行開發</td>
+			</tr>
+			<tr>
+				<td>硬體成本</td>
+				<td class="negative">劣,需受限於特定的裝置(Arduino/或者封閉的晶片)</td>
+				<td class="Positive">好,可基於所有目前的裝置進行開發</td>
+			</tr>
+			<tr>
+				<td colspan='3' class="center aligned">結論:以雲化開發符合我們的專題宗旨，並且可以作為我們專題的基底。<br />且可以透過此系統深度結合原本學長姐的系統，並且改善原始的盲點，<br />例如飛行器急救包系統，如果遇到飛行器死角就有可能失去一條人命，<br />假設透過雲化語音辨識系統結合飛行器系統，就可以順利的改善此問題。<br />且可以以低成本高擴充性，高底層技術，作為雲運算平台的最佳實作。</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>
